@@ -11,9 +11,5 @@ spec:
     name: "{{  .Chart.Name }}-service"
     weight: 100
   port:
-    targetPort: 443-443
-  tls:
-    termination: edge
-    insecureEdgeTerminationPolicy: Allow
-  wildcardPolicy: None
+    targetPort: 3000-3000
       
