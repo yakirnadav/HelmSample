@@ -10,19 +10,6 @@ image:
     requests:
       cpu: 200m
       memory: 300Mi
- readinessProbe:
-   httpGet:
-     path: /ready
-     port: 3000
-   initialDelaySeconds: 3
-   periodSeconds: 5
-  livenessProbe: {}
-  livenessProbe:
-    httpGet:
-      path: /live
-      port: 3000
-    initialDelaySeconds: 40
-    periodSeconds: 10  
 service:
   name: Node
   type: NodePort
