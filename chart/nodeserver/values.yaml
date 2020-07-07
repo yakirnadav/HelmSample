@@ -3,7 +3,7 @@
 replicaCount: 1
 revisionHistoryLimit: 1
 image:
-  repository: yaron2/nodeserver
+  repository: heroku/nodejs-hello-world
   tag: latest
   pullPolicy: IfNotPresent 
   resources:
